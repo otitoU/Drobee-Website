@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drobee - Try outfits on your photo in seconds | Your closet, smarter</title>
+    <meta name="description" content="Digitize your wardrobe. Preview outfits on your photo. Upgrade to HD only when you want. Local first by default. Server only for HD.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Drobee - Try outfits on your photo in seconds">
+    <meta property="og:description" content="Digitize your wardrobe. Preview outfits on your photo. Upgrade to HD only when you want.">
+    <meta property="og:image" content="[OG_IMAGE.png]">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drobee.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Drobee - Try outfits on your photo in seconds">
+    <meta name="twitter:description" content="Digitize your wardrobe. Preview outfits on your photo. Upgrade to HD only when you want.">
+    <meta name="twitter:image" content="[OG_IMAGE.png]">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Drobee",
+        "url": "https://drobee.com",
+        "description": "Digitize your wardrobe and try outfits on your photo"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Drobee",
+        "operatingSystem": ["iOS", "Android"],
+        "applicationCategory": "LifestyleApplication",
+        "offers": [
+            {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "name": "Start Free"
+            },
+            {
+                "@type": "Offer",
+                "price": "9.99",
+                "priceCurrency": "USD",
+                "name": "Pro Monthly"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="2.svg" alt="Drobee Logo">
+                <span>Drobee</span>
+            </div>
+            <nav class="nav-desktop">
+                <a href="#how-it-works" class="nav-link">How it works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <button class="btn btn-outline">Get the app</button>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-text order-2">
+                    <h1>Try outfits on your photo in seconds.</h1>
+                    <p>Scan your wardrobe, build your closet, preview the fit, upgrade to HD when you want.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Get the app</button>
+                        <button class="btn btn-secondary">Try free preview</button>
+                    </div>
+                    <a href="#demo" class="demo-link">Watch 30 sec demo</a>
+                </div>
+                <div class="order-1">
+                    <div class="hero-phone">
+                        <img src="assets/phone-frame.svg" 
+                             alt="Drobee app interface showing outfit try-on feature" 
+                             loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="section bg-gray-50">
+        <div class="section-content">
+            <p style="text-align: center; color: #6b7280; font-size: 0.875rem; margin-bottom: 2rem;">Featured in</p>
+            <div class="press-carousel-container">
+                <div class="press-carousel">
+                    <div class="press-logo-slide">
+                        <div class="press-logo">TechCrunch</div>
+                        <div class="press-logo">Forbes</div>
+                        <div class="press-logo">Vogue</div>
+                        <div class="press-logo">Elle</div>
+                        <div class="press-logo">Wired</div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="press-logo">TechCrunch</div>
+                        <div class="press-logo">Forbes</div>
+                        <div class="press-logo">Vogue</div>
+                        <div class="press-logo">Elle</div>
+                        <div class="press-logo">Wired</div>
+                    </div>
+                </div>
+                <div class="press-fade-overlay left"></div>
+                <div class="press-fade-overlay right"></div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Finally, a way to see if outfits actually work before getting dressed. Game changer for my morning routine."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar avatar-1">SC</div>
+                        <div>
+                            <p class="testimonial-name">Sarah Chen</p>
+                            <p class="testimonial-title">Fashion blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Love that it works on my phone without uploading everything to the cloud. Privacy matters."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar avatar-2">AR</div>
+                        <div>
+                            <p class="testimonial-name">Alex Rivera</p>
+                            <p class="testimonial-title">Startup founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="section bg-white">
+        <div class="section-content value-proposition">
+            <h2 class="value-proposition-title">Your closet, smarter.</h2>
+            <div class="value-propositions-grid">
+                <div class="value-prop-card">
+                    <div class="value-prop-visual">
+                        <div class="mock-digitize">
+                            <div class="phone-scanning">
+                                <div class="phone-frame">
+                                    <div class="phone-screen">
+                                        <div class="camera-viewfinder">
+                                            <div class="scanning-line"></div>
+                                            <div class="clothing-item shirt"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="processed-items">
+                                <div class="clothing-grid">
+                                    <div class="processed-item shirt-processed"></div>
+                                    <div class="processed-item pants-processed"></div>
+                                    <div class="processed-item dress-processed"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value-prop-content">
+                        <div class="value-prop-check">
+                            <i data-lucide="check" aria-hidden="true"></i>
+                            <h3>Digitize your wardrobe</h3>
+                        </div>
+                        <p>Snap photos of your clothes. We automatically remove backgrounds and organize everything.</p>
+                    </div>
+                </div>
+                
+                <div class="value-prop-card">
+                    <div class="value-prop-visual">
+                        <div class="mock-tryon">
+                            <div class="person-silhouette">
+                                <div class="person-body"></div>
+                                <div class="outfit-overlay outfit-1"></div>
+                                <div class="outfit-overlay outfit-2"></div>
+                                <div class="outfit-overlay outfit-3"></div>
+                            </div>
+                            <div class="clothing-selector">
+                                <div class="clothing-option active" data-outfit="1"></div>
+                                <div class="clothing-option" data-outfit="2"></div>
+                                <div class="clothing-option" data-outfit="3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value-prop-content">
+                        <div class="value-prop-check">
+                            <i data-lucide="check" aria-hidden="true"></i>
+                            <h3>Preview outfits on your photo</h3>
+                        </div>
+                        <p>See how clothes look on you instantly. Mix and match without the mess.</p>
+                    </div>
+                </div>
+                
+                <div class="value-prop-card">
+                    <div class="value-prop-visual">
+                        <div class="hd-comparison">
+                            <div class="comparison-side">
+                                <div class="mock-preview-quality">
+                                    <div class="person-outline"></div>
+                                    <div class="pixelated-overlay"></div>
+                                </div>
+                                <span class="quality-label">Preview</span>
+                            </div>
+                            <div class="comparison-divider"></div>
+                            <div class="comparison-side">
+                                <div class="mock-hd-quality">
+                                    <div class="person-outline hd"></div>
+                                    <div class="smooth-overlay"></div>
+                                    <div class="quality-sparkles">
+                                        <div class="sparkle"></div>
+                                        <div class="sparkle"></div>
+                                        <div class="sparkle"></div>
+                                    </div>
+                                </div>
+                                <span class="quality-label hd">HD Render</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="value-prop-content">
+                        <div class="value-prop-check">
+                            <i data-lucide="check" aria-hidden="true"></i>
+                            <h3>Upgrade to HD only when you want</h3>
+                        </div>
+                        <p>Fast previews on device. Photorealistic HD renders when you need them.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="value-proposition-subtitle">Local first by default. Server only for HD.</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section bg-gray-50">
+        <div class="section-content">
+            <h2 class="section-title">How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="camera"></i>
+                    </div>
+                    <h3>Capture</h3>
+                    <p>Snap a photo. We auto remove background.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="grid-3x3"></i>
+                    </div>
+                    <h3>Organize</h3>
+                    <p>Auto tags for category and color. Mark clean, dirty, repair, donate.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3>Try on</h3>
+                    <p>Preview on your photo instantly. Tap Make HD for a realistic render.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlights -->
+    <section class="section bg-white">
+        <div class="section-content">
+            <h2 class="section-title">Everything you need</h2>
+            <div class="features">
+                <div class="feature">
+                    <i data-lucide="smartphone"></i>
+                    <div class="feature-content">
+                        <h3>On device preview</h3>
+                        <p>Fast and private. No internet required.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i data-lucide="sparkles"></i>
+                    <div class="feature-content">
+                        <h3>HD try on credits</h3>
+                        <p>Realistic renders when you want them.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i data-lucide="bookmark"></i>
+                    <div class="feature-content">
+                        <h3>Boards for trips and events</h3>
+                        <p>Plan outfits for special occasions.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i data-lucide="cloud-sun"></i>
+                    <div class="feature-content">
+                        <h3>Weather aware suggestions</h3>
+                        <p>Smart recommendations based on forecast.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i data-lucide="shield-check"></i>
+                    <div class="feature-content">
+                        <h3>Privacy controls and auto delete</h3>
+                        <p>You control your data completely.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i data-lucide="share-2"></i>
+                    <div class="feature-content">
+                        <h3>Share looks with friends</h3>
+                        <p>Get feedback on your outfits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section bg-gray-50">
+        <div class="section-content">
+            <h2 class="section-title">See it in action</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="mock-screen tryon-screen">
+                        <div class="screen-header">
+                            <div class="screen-title">Try On</div>
+                            <div class="hd-button">Make HD</div>
+                        </div>
+                        <div class="screen-content">
+                            <div class="person-preview"></div>
+                            <div class="outfit-on-person"></div>
+                        </div>
+                        <div class="screen-footer">
+                            <div class="outfit-thumbs">
+                                <div class="thumb active"></div>
+                                <div class="thumb"></div>
+                                <div class="thumb"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="mock-screen closet-screen">
+                        <div class="screen-header">
+                            <div class="screen-title">My Closet</div>
+                            <div class="filter-tabs">
+                                <span class="tab active">All</span>
+                                <span class="tab">Tops</span>
+                                <span class="tab">Bottoms</span>
+                            </div>
+                        </div>
+                        <div class="screen-content">
+                            <div class="closet-grid">
+                                <div class="closet-item shirt-item"></div>
+                                <div class="closet-item pants-item"></div>
+                                <div class="closet-item dress-item"></div>
+                                <div class="closet-item jacket-item"></div>
+                                <div class="closet-item skirt-item"></div>
+                                <div class="closet-item shoes-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="mock-screen boards-screen">
+                        <div class="screen-header">
+                            <div class="screen-title">Outfit Boards</div>
+                            <div class="add-button">+</div>
+                        </div>
+                        <div class="screen-content">
+                            <div class="boards-list">
+                                <div class="board-card">
+                                    <div class="board-preview"></div>
+                                    <div class="board-title">Work Week</div>
+                                </div>
+                                <div class="board-card">
+                                    <div class="board-preview vacation"></div>
+                                    <div class="board-title">Vacation</div>
+                                </div>
+                                <div class="board-card">
+                                    <div class="board-preview date"></div>
+                                    <div class="board-title">Date Night</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="section email-section">
+        <div class="section-content">
+            <h2 style="margin-bottom: 1rem;">Join the waitlist</h2>
+            <p style="color: #6b7280; margin-bottom: 2rem;">Be the first to try Drobee when we launch.</p>
+            <form id="waitlist-form" class="email-form">
+                <input type="email" 
+                       placeholder="Enter your email" 
+                       required
+                       class="email-input"
+                       aria-label="Email address">
+                <button type="submit" class="btn btn-primary">Join the waitlist</button>
+            </form>
+            <div id="form-success" class="form-message form-success hidden">
+                Thanks! We'll email you when Drobee is ready.
+            </div>
+            <div id="form-error" class="form-message form-error hidden">
+                Something went wrong. Please try again.
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section bg-white">
+        <div class="section-content">
+            <h2 class="section-title">Simple pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card pricing-free">
+                    <h3 class="pricing-title">Start free</h3>
+                    <p class="pricing-price">$0</p>
+                    <p class="pricing-description">Unlimited previews on device</p>
+                    <ul class="pricing-features">
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Unlimited photos</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>On device try-on</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Auto organization</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary" style="width: 100%;">Start free</button>
+                </div>
+                <div class="pricing-card pricing-pro">
+                    <div class="pricing-badge">Popular</div>
+                    <h3 class="pricing-title">Pro</h3>
+                    <p class="pricing-price">$9.99</p>
+                    <p class="pricing-description">per month with included HD credits</p>
+                    <ul class="pricing-features">
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Everything in free</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>50 HD renders/month</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Buy more credits anytime</span>
+                        </li>
+                    </ul>
+                    <button class="btn" style="width: 100%; background: white; color: #2C2C2C;">Upgrade to Pro</button>
+                </div>
+            </div>
+            <p style="text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 2rem;">HD runs on our GPU. We watermark nothing.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-gray-50">
+        <div class="section-content">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How accurate is the preview?</h3>
+                    <p class="faq-answer">On device previews give you a good sense of fit and color. HD renders are highly realistic using advanced AI.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What phones are supported?</h3>
+                    <p class="faq-answer">iOS 15+ and Android 8+. Most phones from the last 4 years work great.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need to upload face photos?</h3>
+                    <p class="faq-answer">One body photo is all you need. We never require face photos and you can delete your photo anytime.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What happens to my images?</h3>
+                    <p class="faq-answer">Photos stay on your phone by default. Only HD renders are processed on our servers, then automatically deleted after 30 days.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do credits work?</h3>
+                    <p class="faq-answer">Each HD render uses one credit. Pro includes 50 monthly credits. You can buy more anytime for $0.50 each.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="section download-section">
+        <div class="section-content">
+            <h2>Ready to transform your closet?</h2>
+            <p>Download Drobee and start trying outfits in seconds.</p>
+            <div class="download-badges">
+                <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="store-badge" aria-label="Download on the App Store" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/app-store-badge.svg" alt="Download on the App Store" loading="lazy">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" class="store-badge" aria-label="Get it on Google Play" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/google-play-badge.svg" alt="Get it on Google Play" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <img src="1.svg" alt="Drobee Logo">
+                    <span>Drobee</span>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Drobee Inc. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="/terms">Terms</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/contact">Contact</a>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">
+                        <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <i data-lucide="music"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
